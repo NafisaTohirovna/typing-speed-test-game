@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="start-wrapper">
+      <h1>Check your typing skills in a minute</h1>
+      <p>Type away to join 150+ million test takers!</p>
+      <div class="select-type">
+        <img src="./img/time.png" alt="" />
+        <select name="" id="time">
+          <option value="1">1 Minute Test</option>
+          <option value="2">2 Minute Test</option>
+          <option value="3">3 Minute Test</option>
+          <option value="4">4 Minute Test</option>
+          <option value="5">5 Minute Test</option>
+          <option value="10">10 Minute Test</option>
+        </select>
+      </div>
+      <div class="select-type">
+        <img src="./img/file.png" alt="" />
+        <select name="" id="text">
+          <option value="easy">Easy Text</option>
+          <option value="medium">Medium Text</option>
+          <option value="hard">Hard Text</option>
+        </select>
+      </div>
+      <button class="start" id="startBtn">START TEST</button> <br />
+      <span>You voted - and we switched to the dark style</span>
+    </div>
+    <div class="wrapper">
+      <div class="time-wrapper">
+        <h2 class="time">1:00</h2>
+        <h2 id="closeBtn">Close✖️</h2>
+      </div>
+      <div class="content-box">
+        <div class="typing-text">
+          <p></p>
+        </div>
+      </div>
+      <textarea class="input-field"></textarea>
+    </div>
+
+    <div class="finish-wrapper">
+      <ul class="result-details">
+        <li class="mistake">
+          <span>0</span>
+          <p>Mistake</p>
+        </li>
+        <li class="cpm">
+          <span>0</span>
+          <p>CPM</p>
+        </li>
+        <li class="wpm">
+          <span>0</span>
+          <p>WPM</p>
+        </li>
+      </ul>
+      <button id="tryBtn">Try Again</button>
+    </div>
+
+    <script src="./paragraphs.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
